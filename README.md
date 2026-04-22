@@ -66,7 +66,7 @@ Changeover can start only if:
 
 ---
 
-### 4. Critical Resource Management
+### 4. Critical Resource Management (Enhanced)
 
 Visual threshold system:
 
@@ -74,8 +74,97 @@ Visual threshold system:
 - 🟡 20–50% → Risk  
 - 🟢 >50% → OK  
 
-👉 No calculation → fast decisions
+👉 No calculation → fast decisions  
 
+---
+
+### ➕ Enhancement — Physical Roll Tracking System
+
+A key issue was the **uncertainty of partially used consumables** (packaging rolls).
+
+- No reliable estimation of remaining capacity  
+- Late replenishment requests  
+- Increased risk of production stoppage  
+
+👉 The problem was not stock, but **lack of visibility**
+
+---
+
+### 💡 Introduced Solution — Radial Gauge Disk
+
+A **physical circular gauge based on radial thickness measurement**:
+
+- Each **radius corresponds to a single value** (remaining units)  
+- From **9000 (outer ring)** → **0 (core)**  
+- The roll is placed at the center  
+- The outer edge directly indicates remaining quantity  
+
+👉 No ambiguity  
+👉 No calculation  
+👉 No interpretation needed  
+
+---
+
+### 🎯 Key Design Principle
+
+> One radius = one quantity
+
+---
+
+### 🧩 How It Works
+
+1. Place the roll on the disk  
+2. Observe where the outer edge falls  
+3. Read the value directly  
+
+---
+
+### 🎨 Visual Representation (Concept)
+
+    9000 ────────────────
+    8000 ─────────────
+    7000 ───────────
+    6000 ─────────
+    5000 ───────
+    4000 ─────
+    3000 ────
+    2000 ───
+    1000 ──
+       0 ─ (core)
+
+
+---
+
+### 🔁 Decision Zones
+
+- 🟢 High capacity → No action  
+- 🟡 Mid capacity → Trigger replenishment  
+- 🔴 Low capacity → Urgent replenishment  
+
+---
+
+### 🎯 Purpose (Critical Clarification)
+
+This system is **not used to stop production**
+
+👉 It is used to:
+
+> **Trigger replenishment at the right time**
+
+---
+
+### 🏭 Operational Impact
+
+- Eliminates late consumable orders  
+- Reduces risk of line stoppage  
+- Improves coordination with logistics  
+- Removes estimation uncertainty for operators  
+
+---
+
+### 🧠 Key Insight
+
+> The goal is not precision, but **reliable decision-making under uncertainty**
 ---
 
 ## 🔁 Before vs After
