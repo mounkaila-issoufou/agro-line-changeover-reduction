@@ -76,6 +76,7 @@ Visual threshold system:
 
 👉 No calculation → fast decisions  
 
+
 ---
 
 ### ➕ Enhancement — Physical Roll Tracking System
@@ -103,6 +104,7 @@ A **physical circular gauge based on radial thickness measurement**:
 👉 No calculation  
 👉 No interpretation needed  
 
+![Roll Gauge](design/disque_bobine.svg)
 ---
 
 ### 🎯 Key Design Principle
@@ -162,10 +164,65 @@ This system is **not used to stop production**
 
 ---
 
+## 🔍 Why This Works in Real Factories
+
+This system is designed for **real industrial constraints**, not ideal conditions:
+
+- No reliance on digital tools  
+- Works in high-noise environments  
+- No training required for operators  
+- Immediate visual understanding  
+- Reduces cognitive load instead of adding complexity  
+
+👉 It fits the way operators actually work on the shopfloor
+
+
 ### 🧠 Key Insight
 
 > The goal is not precision, but **reliable decision-making under uncertainty**
 ---
+
+## 🏭 Concrete Use Case
+
+### Scenario: Recipe Change — Blue → Yellow
+
+#### Context
+- Current recipe: Blue cheese  
+- Next recipe: Yellow cheese  
+- Packaging roll partially used  
+
+---
+
+### ❌ Before System
+
+- Operator estimates remaining roll visually → uncertain  
+- No replenishment triggered  
+- Roll runs out during production  
+
+👉 Result:
+- Line stops unexpectedly  
+- Emergency call to logistics  
+- Increased stress and delays  
+
+---
+
+### ✅ After System
+
+- Operator checks radial gauge → zone 🟡  
+- Replenishment triggered in advance  
+- New roll available before changeover  
+
+👉 Result:
+- No interruption  
+- Smooth transition  
+- Fully synchronized teams  
+
+---
+
+### 🎯 Outcome
+
+> A simple visual signal replaces uncertainty and prevents disruption
+
 
 ## 🔁 Before vs After
 
